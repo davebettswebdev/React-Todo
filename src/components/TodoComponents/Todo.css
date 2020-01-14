@@ -8,7 +8,12 @@ body {
 }
 
 body {
-  background-color: #2d2d37;
+  background: url(../../Images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 
 h1,
@@ -20,13 +25,17 @@ h6,
 div,
 p,
 span {
-  color: white;
+  color: Black;
   font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: white;
 }
 
 .App {
   font-family: sans-serif;
-  text-align: center;
+  /* text-align: center; */
   padding: 0 36px;
   max-width: 665px;
   margin: 0 auto;
@@ -49,7 +58,7 @@ h1 {
   margin: 0 auto;
 }
 .item {
-  background-color: #e64944;
+  background-color: black;
   width: 45%;
   text-align: left;
   margin: 4px 0;
@@ -58,8 +67,13 @@ h1 {
 }
 
 .item.done {
-  background-color: #d17d7c;
+  background-color: white;
   text-decoration: line-through;
+  
+}
+
+.item.done p {
+    color: lightgray;
 }
 form {
   width: 50%;
@@ -67,27 +81,27 @@ form {
   justify-content: flex-end;
 }
 form > input {
-  background-color: #2d2d37;
+  background-color: white;
   border: 0;
   padding: 6px 0;
   font-size: 1rem;
   width: 240px;
   outline: 0;
   color: white;
-  border-bottom: 1px solid #e64944;
+  border-bottom: 1px solid black;
   margin-right: 8px;
 }
 
 button {
-  background-color: #e64944;
-  border: 1px solid #e64944;
+  background-color: black;
+  border: 1px solid black;
   color: white;
   font-size: 16px;
   padding: 6px 14px;
 }
 
 input::placeholder {
-  color: #e64944;
+  color: grey;
   opacity: 1;
 }
 
